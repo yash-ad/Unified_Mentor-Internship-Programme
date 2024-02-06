@@ -54,3 +54,32 @@ a:hover{
     text-underline-offset: 0.8rem;
     text-decoration-color: #b5b5b5;
 }
+
+/* Mobile Navbar */
+
+#Mobile-nav{
+    /* display: none; */
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+
+    
+}
+.menu-links{
+    gap: 1rem;
+    list-style: none;
+}
