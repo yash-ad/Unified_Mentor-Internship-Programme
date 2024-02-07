@@ -58,7 +58,7 @@ a:hover{
 /* Mobile Navbar */
 
 #Mobile-nav{
-    /* display: none; */
+    display: none;
 }
 
 .hamburger-menu{
