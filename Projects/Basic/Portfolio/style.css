@@ -76,10 +76,43 @@ a:hover{
 }
 
 .hamburger-icon span{
-
-    
+height: 2px;
+background-color: black;
+width: 100%;
+transition: all 0.3 ease-in-out;   
 }
+
 .menu-links{
-    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
     list-style: none;
+}
+
+/* menu.classList.toggle("open") from Javascript we have created a class called "open" */
+.menu-links .open{
+max-height: 200px;
+}
+
+/* Css animation */
+/* First child that means first child element */
+.hamburger-icon .open span:first-child{
+transform: rotate(45deg) translate(10px,5px);
 }
