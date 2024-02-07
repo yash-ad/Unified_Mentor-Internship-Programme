@@ -107,12 +107,28 @@ transition: all 0.3 ease-in-out;
 }
 
 /* menu.classList.toggle("open") from Javascript we have created a class called "open" */
-.menu-links .open{
+.menu-links.open{
 max-height: 200px;
 }
 
 /* Css animation */
 /* First child that means first child element */
-.hamburger-icon .open span:first-child{
-transform: rotate(45deg) translate(10px,5px);
-}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+    opacity: 1;
+   
+  }
+  
