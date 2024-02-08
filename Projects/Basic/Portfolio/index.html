@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
 </head>
@@ -11,7 +12,7 @@
     <div class="container">
         <!-- Desktop Navigation  -->
         <nav id="Desktop-nav">
-            <div class="logo">Yash Dandnaik</div>
+            <div class="logo"><i class="fa-solid fa-code"></i> Yash Dandnaik</div>
             <div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -24,7 +25,7 @@
 
         <!-- Mobile Navigation  -->
         <nav id="Mobile-nav">
-            <div class="logo">Yash Dandnaik</div>
+            <div class="logo"><i class="fa-solid fa-code"></i> Yash Dandnaik</div>
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -40,24 +41,99 @@
             </div>
         </nav>
 
+        <!-- Profile section  -->
+<section id="Profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Yash-dandnaik-profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Yash Dandnaik</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="buttons-container">
+                <button class="download-btn" onclick="window.open('./assets/Yash_Dandnaik_Resume.pdf')">Download Resume</button>
+                <button class="contact-btn" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+<img class="icon" src="./assets/linkedin.png" alt="my-Linkedin-profile" onclick="location.href=''">
+<img class="icon" src="./assets/github.png" alt="my-github-profile" onclick="location.href=''">
+            </div>
+        </div>
+</section>
+
+
+<!-- <section id="Profile">
+        <div class="profile-picture-container">
+            <img src="./assets/">
+        </div>
+        <div class="text-container">
+            <p class="text-container_p1">Hello, I'm</p>
+            <h1 class="title">Yash Dandnaik</h1>
+            <p class="text-container_p2">Frontend Developer</p>
+            <div class="buttons-container">
+                <button class="download-btn">Download Resume</button>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div id="socials-container">
+            </div>
+        </div>
+</section>
+<section id="Profile">
+        <div class="profile-picture-container">
+            <img src="./assets/">
+        </div>
+        <div class="text-container">
+            <p class="text-container_p1">Hello, I'm</p>
+            <h1 class="title">Yash Dandnaik</h1>
+            <p class="text-container_p2">Frontend Developer</p>
+            <div class="buttons-container">
+                <button class="download-btn">Download Resume</button>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div id="socials-container">
+            </div>
+        </div>
+</section>
+<section id="Profile">
+        <div class="profile-picture-container">
+            <img src="./assets/">
+        </div>
+        <div class="text-container">
+            <p class="text-container_p1">Hello, I'm</p>
+            <h1 class="title">Yash Dandnaik</h1>
+            <p class="text-container_p2">Frontend Developer</p>
+            <div class="buttons-container">
+                <button class="download-btn">Download Resume</button>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div id="socials-container">
+            </div>
+        </div>
+</section>
+<section id="Profile">
+        <div class="profile-picture-container">
+            <img src="./assets/">
+        </div>
+        <div class="text-container">
+            <p class="text-container_p1">Hello, I'm</p>
+            <h1 class="title">Yash Dandnaik</h1>
+            <p class="text-container_p2">Frontend Developer</p>
+            <div class="buttons-container">
+                <button class="download-btn">Download Resume</button>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div id="socials-container">
+            </div>
+        </div>
+</section> -->
+
+           
       
 
 
-        <header>
-            <div>
-                <div class="profile-picture"></div>
-                <div class="details">
-                    <p>Hello, I'm</p>
-                    <h1>Yash Dandnaik</h1>
-                    <p>Frontend Developer</p>
-                    <div class="buttons-container">
-                        <button class="download-btn">Download Resume</button>
-                        <button class="contact-btn">Contact</button>
-                    </div>
-                    <div id="socials-container"></div>
-                </div>
-            </div>
-        </header>
+
+
+
     </div>
     <script src="./script.js"></script>
 </body>

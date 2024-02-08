@@ -1,4 +1,4 @@
-//Lets add javascript functioning for toggling menu
+//Lets add javascript functioning for toggling the menu
 
 const toggleMenu = () => {
     const menu = document.querySelector(".menu-links"); // Select the first element with class "menu-links"
