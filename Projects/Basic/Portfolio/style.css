@@ -21,6 +21,7 @@ scroll-behavior: smooth;
 /* Desktop navbar */
 #Desktop-nav{
     display: flex;
+   
 }
 
 nav,.nav-links{
@@ -30,7 +31,7 @@ nav,.nav-links{
 nav{
     justify-content: space-around;
    align-items: center;
-   height: 18vh;
+   height: 14vh;
 }
 .logo{
     font-size: 2.5rem;
@@ -38,9 +39,9 @@ nav{
     font-weight: 500;
 }
 .nav-links{
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 a{
@@ -154,6 +155,7 @@ display: flex;
 justify-content: center;
 gap: 5rem;
 height: 80vh;
+position: relative;
   }
 
   .section__pic-container{
@@ -250,10 +252,41 @@ border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .section-container{
-  gap: 4rem;
+  gap: 4.5rem;
   height: 80%;
 }
 
 .about-details-container{
-  
+justify-content: center;
+flex-direction: column;
+}
+
+.about-containers{
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-containers, .about-details-container{
+  display: flex;
+}
+
+.about-pic{
+  border-radius: 2rem;
+}
+
+.details-container{
+  padding: 1rem;
+  background: white;
+  border-radius: 2rem;
+  flex: 1;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: #a3a3a3;
+  text-align: center;
+}
+
+.arrow{
+  position: absolute;
+  right: -5rem;
+  bottom: 2rem;
 }
