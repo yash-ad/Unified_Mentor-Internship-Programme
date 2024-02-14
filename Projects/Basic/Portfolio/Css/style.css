@@ -238,8 +238,9 @@ text-align: center;
   .profile .buttons-container{
 display: flex;
 justify-content: center;
-gap: 1rem;
+gap: 1.5rem;
 position: absolute;
+/* align-items: center; */
 margin-left: 3rem;
 z-index: 1;
   }
@@ -247,7 +248,7 @@ z-index: 1;
   button{
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 1rem;
+    padding: 0.7rem;
     width: 8rem;
     border-radius: 2rem;
   }
@@ -353,8 +354,8 @@ font-weight: 600;
   text-align: center;
 }
 #about .section-container{
-  gap: 4.5rem;
-  height: 80%;
+  gap: 5rem;
+  height: 90%;
 }
 
 #about .about-details-container{
@@ -363,7 +364,7 @@ flex-direction: column;
 }
 
 #about .about-containers{
-  gap: 1.5rem;
+  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -399,7 +400,19 @@ flex-direction: column;
 #skills{
   position: relative;
 }
+#skills .section__text__p1{
+  text-align: center;
+  font-size: 1.3rem;
+  color: #435a80;
+  font-weight: 600; 
+}
 
+#skills .title{
+  font-size: 2.7rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
 .skills-details-container{
   display: flex;
   justify-content: center;
@@ -413,7 +426,7 @@ flex-direction: column;
   flex-direction: row;
   gap: 2rem;
   justify-content: space-around;
-  padding: 50px;
+  padding: 55px;
 }
 
 article{
