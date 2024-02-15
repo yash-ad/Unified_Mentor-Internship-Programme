@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="container">
+
         <!-- Desktop Navigation  -->
         <nav id="Desktop-nav">
             <div class="logo"><i class="fa-solid fa-code"></i> Yash Dandnaik</div>
@@ -49,8 +50,9 @@
 <section id="profile" class="profile">
   <div id="particles-js"></div>
         <div class="section__text">
-            <p class="section__text__p1">Hello there, I'm</p>
-            <h1 class="title">Yash Dandnaik</h1>
+            <p class="section__text__p1">Hello there, I'm
+              <h1 class="title">Yash Dandnaik</h1>
+            </p>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="buttons-container">
                 <button class="btn-1" onclick="window.open('/Projects/Basic/Portfolio/assets/Yash_Dandnaik_Resume.pdf')">Download Resume</button>
@@ -78,27 +80,14 @@
   <p class="section__text__p1">Get To Know More</p>
   <h1 class="title">About Me</h1>
  </div>
-    <div class="section-container">
-      <div class="section__pic-container">
+    <div class="section-container" id="row">
+      <div class="section__pic-container" id="image">
         <img
           src="/Projects/Basic/Portfolio/assets/profile-pic.png"
           alt="Profile picture"
           class="about-pic"/>
       </div>
-      <div class="about-details-container">
-        <div class="text-container">
-          <p>
-            <h3>I'm Yash</h3>
-
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-
-            </p>
-        </div>
+      <div class="about-details-container" id="content">
         <div class="about-containers">
           <div class="details-container">
             <img
@@ -107,7 +96,7 @@
               class="icon"
             />
             <h3>Fresher</h3>
-            <p>0-1.5 years <br/>Frontend Development</p>
+            <p>0 - 1.5 years <br/>Frontend Development</p>
           </div>
           <div class="details-container">
             <img
@@ -116,8 +105,29 @@
               class="icon"
             />
             <h3>Education</h3>
-            <p>B.Sc. In Animation and Multimedia.<br/>Course in a Web Development Program.</p>
+            <p>Courses in a Web Development Program.<br/>B.Sc. In Animation and Multimedia.</p>
           </div>
+        </div>
+        <div class="text-container">
+            <h3>I'm Yash</h3>
+            <span class="tag"> Frontend Developer</span>
+            <p>
+              I recently completed my web development training at Codekul Software Training Institute in Pune. I also hold a Bachelor of Science in Animation and Multimedia from Frameboxx 2.0 Animation Institute.Additionally, I have practical experience in a professional setting, having worked as a Junior Matchmove/RotoAnim Artist at Trace VFX Solutions.
+            </p> 
+            <br>
+            <p>I am excited to embark on my journey as a fresher front-end developer. With a strong foundation in HTML, CSS, and JavaScript, ReactJs coupled with hands-on experience in building responsive and user-friendly websites, I am eager to contribute my skills and creativity to innovative projects.</p>
+             <br>
+             <p>
+              I am committed to continuous learning and growth in the dynamic field of front-end development, with a focus on mastering new technologies and best practices.
+            </p>
+             <br>
+            <p>I am from Pune, India. 
+              Working for myself to improve my skills.
+                </p>
+              <p>
+                I eagerly anticipate the emergence of remarkable opportunities that will allow me to broaden my horizons and delve into new areas of expertise.
+              </p>
+            
         </div>
         </div>
     </div>
@@ -130,68 +140,70 @@
 <div class="skills-heading"><p class="section__text__p1">Explore My</p>
   <h1 class="title">Skills & Abilities</h1>
 </div>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="article-container">
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>HTML</h3>
-  <p>Experienced</p>
-</div>
-</article>
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>CSS</h3>
-  <p>Experienced</p>
-</div>
-</article>
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>JavaScript</h3>
-  <p>Experienced</p>
-</div>
-</article>
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>ReactJs</h3>
-  <p>Experienced</p>
-</div>
-</article>
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>Git VCS</h3>
-  <p>Experienced</p>
-</div>
-</article>
-<article>
-<img src="./assets/checkmark.png" alt="skills icon" class="icon">
-<div>
-  <h3>Github</h3>
-  <p>Experienced</p>
-</div>
-</article>
-            </div>
-          </div>
-        </div>
+<div class="container">
+  <div class="row" id="skillsContainer">
+
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/TailwindCSS.png"/>
+        <span>TailwindCSS</span>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/ReactJS.png" height="50" width="50">
+        <span>ReactJS</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"height="50" width="50" viewBox="0 0 48 48">
+          <linearGradient id="SNASnMitCxQrIYk4GDibta_v8RpPQUwv0N8_gr1" x1="18.208" x2="34.159" y1="2.413" y2="46.236" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f09701"></stop><stop offset="1" stop-color="#e36001"></stop></linearGradient><path fill="url(#SNASnMitCxQrIYk4GDibta_v8RpPQUwv0N8_gr1)" d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"></path><path fill="#f09601" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"></path><path fill="#fff" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5L24,25z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#d6e0e9" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path><path d="M33.2,13l-0.3,4H24h-4.9l0.3,4H24h8.6l-0.7,11.5L24,35.1l-7.9-2.6L15.7,27h4l0.2,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-8.4 l-0.7-12H24H33.2 M34.278,12H33.2H24h-9.1h-1.06l0.062,1.058l0.7,12L14.657,26h-0.032l0.078,1.073l0.4,5.5l0.049,0.668 l0.636,0.209l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6l0.644-0.212l0.041-0.677l0.7-11.5L33.663,20H32.6H24h-3.672l-0.15-2H24h8.9 h0.928l0.069-0.925l0.3-4L34.278,12L34.278,12z M20.623,26H24h3.331l-0.185,2.769L24,29.843l-3.156-1.077l-0.148-1.846L20.623,26 L20.623,26z" opacity=".05"></path><path d="M33.2,13l-0.3,4H24h-4.9l0.3,4H24h8.6l-0.7,11.5L24,35.1l-7.9-2.6L15.7,27h4l0.2,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-8.4 l-0.7-12H24H33.2 M33.739,12.5H33.2H24h-9.1h-0.53l0.031,0.529l0.7,12l0.027,0.471H15.6H24h3.866l-0.242,3.634L24,30.372 l-3.628-1.239l-0.174-2.173l-0.037-0.46H19.7h-4h-0.538l0.039,0.536l0.4,5.5l0.024,0.334l0.318,0.105l7.9,2.6L24,35.626 l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.032-0.53H32.6H24h-4.136l-0.225-3H24h8.9h0.464l0.035-0.463l0.3-4 L33.739,12.5L33.739,12.5z" opacity=".07"></path>
+          </svg>
+        <span>HTML5</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/javascript.png" height="50" width="50">
+        <span>JavaScript</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/Git-Icon-1788C.png" height="50" width="50">
+        <span>Git</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/github.png" height="50" width="50">
+        <span>GitHub</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="/Projects/Basic/Portfolio/assets/css.png" height="50" width="50">
+        <span>CSS</span>
+      </div>
+    </div>
+</div>
+</div>
+      <img src="/Projects/Basic/Portfolio/assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>       
       
+
      <!-- Projects section  -->
      <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="skills-details-container">
+   <div class="project-heading">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+   </div>
+      <div class="projects-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-<img src="./assets/project-1.png" alt="Project-1-image" class="project-img"/>
+<img src="/Projects/Basic/Portfolio/assets/project-1.png" alt="Project-1-image" class="project-img"/>
             </div>
             <h2 class="sub-title project-title">Project One</h2>
             <div class="buttons-container">
@@ -201,7 +213,7 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-<img src="./assets/project-1.png" alt="Project-1-image" class="project-img"/>
+<img src="/Projects/Basic/Portfolio/assets/project-2.png" alt="Project-1-image" class="project-img"/>
             </div>
             <h2 class="sub-title project-title">Project One</h2>
             <div class="buttons-container">
@@ -211,49 +223,36 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-<img src="./assets/project-1.png" alt="Project-1-image" class="project-img"/>
+<img  src="/Projects/Basic/Portfolio/assets/project-3.png" alt="Project-1-image" class="project-img"/>
             </div>
             <h2 class="sub-title project-title">Project One</h2>
             <div class="buttons-container">
-<button class="btn-2 project-btn" onclick="location.href='./'"><i class="fa-solid fa-eye"></i> Live Demo</button>
-<button class="btn-2 project-btn" onclick="location.href='./'"><i class="fa-solid fa-code"></i> Code</button>
+<button class="btn-2 project-btn" onclick="location.href='./'"><i class="fa-solid fa-eye"></i>  Live Demo</button>
+<button class="btn-2 project-btn" onclick="location.href='./'"><i class="fa-solid fa-code"></i>  Code</button>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='./#projects'"/>
+      <img src="/Projects/Basic/Portfolio/assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>       
       
      <!-- Contact section  -->
      <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+   <div class="contact-heading">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+   </div>
   <div class="contact-info-upper-container">
     <div class="contact-info-container">
-      <p> <i class="fas fa-phone"></i> +91 702-063-4551</p>
-      <p> <i class="fas fa-envelope"></i> yashdandnaik078@gmail.com</p>
-      <p> <i class="fas fa-map-marked-alt"></i> Pune, India</p>
-      <div class="contact-info-container">
-        <p><a href="https://www.linkedin.com/in/yash-dandnaik/">  <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        /></a>
-      </p>
-        <p><a href="mailto:yashdandnaik078@gmail.com"><img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        /></a>
-      </p>
-        <p><a href='https://github.com/yash-ad'><img class="icon Github-Icon" src="./assets/github.png" alt="my-github-profile" onclick="location.href='https://github.com/yash-ad'">
-        </a>
-      
-      </p>
-      </div>
+      <p> <i class="fas fa-phone"></i>  +91 702-063-4551</p>
+      <p> <i class="fas fa-envelope"></i>  yashdandnaik078@gmail.com</p>
+      <p> <i class="fas fa-map-marked-alt"></i>  Pune, India</p>
     </div>
-</div>
       </section>
+
+
+
+      
       <footer>
         <nav>
           <div class="nav-links-container">
