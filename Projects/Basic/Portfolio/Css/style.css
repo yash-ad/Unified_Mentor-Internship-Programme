@@ -14,6 +14,8 @@
 body{
   /* background: #f7f7f7; */
   font-family: 'Poppins', sans-serif;  
+  background-color:#111827;
+  /* background-color: #0b101b; */
 }
 
 html::-webkit-scrollbar{
@@ -43,8 +45,8 @@ overflow-x: hidden;
     justify-content: space-between;
     padding: 1.7rem 10%;
     height: 5rem;
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    background-color: #111827;
+    box-shadow: 0 1px  rgba(160, 171, 181, 0.3);
 }
 
 nav,.nav-links{
@@ -62,10 +64,7 @@ nav{
     font-size: 2.5rem;
     cursor: default;
     font-weight: 500;
-}
-
-.logo:hover{
-color: #fc8c05;
+    color: #e2830e;
 }
 
 .nav-links{
@@ -187,16 +186,16 @@ justify-content: center;
 align-items: center;
 gap: 15rem;
 min-height: 100vh;
-position: relative;
   }
 
    .profile #particles-js {
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     top:0;
     left: 0;
   }
+
 
   .section__pic-container{
     display: flex;
@@ -304,8 +303,7 @@ border: rgb(53, 53, 53) 0.1rem solid;
     font-size: 1.7rem;
     display: inline-block;
     line-height: 44px;
-    /* color: #00d9ff; */
-    /* background-color: #09011b; */
+    color: #00d9ff;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -321,9 +319,6 @@ border: rgb(53, 53, 53) 0.1rem solid;
   }
   .social-icons a.github:hover {
     background-color: #0e0e0e;
-  }
-  .social-icons a.twitter:hover {
-    background-color: #00aced;
   }
   .social-icons a.linkedin:hover {
     background-color: #007bb6;
@@ -343,7 +338,7 @@ border: rgb(53, 53, 53) 0.1rem solid;
 
  #about #content{
   flex: 1 1 45rem;
-  padding: 3rem;
+  padding: 1rem;
  }
 
 #about .section__text__p1{
@@ -397,6 +392,24 @@ margin-top: 3rem;
 }
 .details-container .icon{
   cursor:default;
+}
+.text-container h3{
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem
+}
+.text-container span {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 600;
+  /* margin-top: 1rem  */
+}
+
+.text-container p {
+  font-size: 1.2rem;
+    /* margin-top: 1rem; */
+    /* font-family: "Nunito"; */
+    /* font-weight: 300; */
+    text-transform: none;
 }
 .arrow{
   position: absolute;
@@ -555,15 +568,54 @@ margin: 5px;
 
 /* Contact section */
 #contact {
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 85vh;
+  height: 100vh;
 }
 
+.contact-form{
+width: 100%;
+margin-top: 5vh;
+height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+form{
+  background-color:#1F2937;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 3rem 6rem;
+border-radius: 10px;  
+}
+form label{
+  color: rgb(145, 145, 145);
+}
+form input ,form textarea{
+border: 0;
+margin: 6px 0;
+padding: 10px;
+outline: none;
+background: #f5f5f5;
+font-size: 16px;
+}
+
+form button{
+padding: 15px;
+width: 150px;
+background: #4F46E5;
+color: #fff;
+border: 0;
+outline: none;
+margin: 5px auto 0;
+cursor: pointer;
+border-radius: 30px;
+}
 .contact-heading {
-  margin-top: -10rem;
+  margin-top: -1rem;
 }
 
 .contact-heading .section__text__p1 {
