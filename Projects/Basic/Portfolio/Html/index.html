@@ -250,28 +250,28 @@
       <h1 class="title">Contact Me</h1>
     </div>
     <div class="contact-form">
-      <form id="myForm"  onsubmit="sendEmail()">
+      <form id="myForm">
         <div class="input-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()" required>
           <span id="name-error"></span>
         </div>
   
         <div class="input-group">
           <label>Email Id</label>
-          <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+          <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" required>
           <span id="email-error"></span>
         </div>  
         
         <div class="input-group">
           <label>Subject</label>
-          <input type="email" placeholder="Enter Subject" id="contact-subject" onkeyup="validateSubject()">
+          <input type="email" placeholder="Enter Subject" id="contact-subject" onkeyup="validateSubject()" required>
           <span id="subject-error"></span>
         </div>
   
         <div class="input-group">
           <label>Your Message</label>
-          <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+          <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()" required></textarea>
           <span id="message-error"></span>
         </div>
   

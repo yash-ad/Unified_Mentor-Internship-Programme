@@ -640,7 +640,9 @@ color: red;
 }
 
 #submit-error{
-  color: red;
+  color: rgb(255, 0, 30);
+ text-align: center;
+ font-weight: 500;
 }
 
 .input-group span i{
