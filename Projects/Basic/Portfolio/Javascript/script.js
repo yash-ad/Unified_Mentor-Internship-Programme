@@ -81,7 +81,7 @@ if(remainingCharacters > 0){
  function validateForm(){
     if(!validateName()  || !validateEmail() || !validateSubject || !validateMessage()){
         submitError.style.display = 'block';
-        submitError.innerHTML = "To submit it, please fix the error."
+        submitError.innerHTML = "*To submit it, please fix the error."
         setTimeout(()=>{
             submitError.style.display = "none";
         },3000)
@@ -121,6 +121,5 @@ const toggleMenu = () => {
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
-
 
 
