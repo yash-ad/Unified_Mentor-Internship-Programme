@@ -122,4 +122,11 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
 
-
+// <!-- typed js effect starts -->
+var typed = new Typed(".typing-text", {
+    strings: ["Frontend developer"],
+    loop: true,
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 500,
+});
