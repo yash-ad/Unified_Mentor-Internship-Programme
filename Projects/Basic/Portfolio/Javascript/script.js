@@ -108,25 +108,30 @@ icon.parentNode.removeChild(icon)
 };
 
 
-//Lets add javascript functioning for toggling the menu:-
-const toggleMenu = () => {
-    const menu = document.querySelector(".menu-links"); // Select the first element with class "menu-links"
-    const icon = document.querySelector(".hamburger-icon"); // Select the first element with class "hamburger-icon"
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-};
+//Lets add jquery code functioning for toggling the menu:-
+$(document).ready(function () {
+
+    $('#menu').click(function () {
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
+    });
+
+});
 
 
-//Lets tilt the profile picture image using Javascript library tilt.js
+//Lets tilt the profile picture image using Javascript library tilt.js:-
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
+
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
     strings: ["Frontend developer"],
     loop: true,
-    typeSpeed: 30,
-    backSpeed: 30,
+    typeSpeed: 50,
+    backSpeed: 50,
     backDelay: 500,
 });
+
+
