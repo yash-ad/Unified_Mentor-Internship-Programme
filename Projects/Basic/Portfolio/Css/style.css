@@ -375,11 +375,11 @@ font-weight: 600
 /* hero media queries starts*/
 @media (max-width: 450px) {
   .home .btn {
-    margin-left:-6rem;
+    margin-left:-4rem;
   }
   .socials {
     margin-top: 12rem;
-    margin-left:8.5rem;
+    margin-left:10.5rem;
   }
   .home .image img {
     margin-top: 1rem;
@@ -474,7 +474,7 @@ font-weight: 600
   font-size: 1.8rem;
   color: #e1e1e1;
   font-weight: 500;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 .skills-heading .heading {
  font-size: 3.5rem;
@@ -706,10 +706,6 @@ font-weight: 600
 
 /* contact section starts */
 #contact {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 93vh; */
   background:#0c111c;
   min-height: 93vh;
 }
@@ -829,22 +825,24 @@ font-weight: 500;
 
 }
 /* contact section media queries starts */
-@media (max-width: 900px) {
-  .contact {
+@media (max-width: 600px) {
+  #contact {
     min-height: 70vh;
   }
-  .contact .container {
+  #contact .contact-heading{
+    margin-top: 5rem;
+  }
+
+  #contact .contact-container {
     margin: 3rem 0 2rem 0;
   }
-  .contact .container .content {
-    padding: 18px 12px;
-  }
-  .contact .content .image-box {
-    display: none;
-  }
-  .contact .content form {
-    width: 100%;
-    margin-right: 2rem;
+
+  .contact-container .contact-info-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    flex-direction: column;
+    margin-top: 15rem;
   }
 }
 /* contact section media queries ends */
@@ -916,14 +914,17 @@ font-weight: 500;
 }
 
 @media (max-width: 450px) {
-  .footer .box-container .box {
+  .footer .box-container .box .box-heading {
     margin: 1.5rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+   
   }
   .footer .box-container .box p {
-    padding: 0.7rem;
+    padding: 0.9rem;
   }
   .footer .box-container .box .share a {
-    padding: 1.2rem;
+    padding: 1.8rem;
   }
 }
 /* footer section ends */
