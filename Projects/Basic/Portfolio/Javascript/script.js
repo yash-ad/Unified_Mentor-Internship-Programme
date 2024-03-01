@@ -56,6 +56,7 @@ function validateSubject() {
 
 // Function to validate message input
 function validateMessage() {
+
     let message = document.getElementById('contact-message').value;
     let requiredCharacters = 30;
     let remainingCharacters = requiredCharacters - message.length;
@@ -165,11 +166,11 @@ srtop.reveal('.work .box', { interval: 200 });
 srtop.reveal('#contact .contact-form', { delay: 400 });
 srtop.reveal('#contact .contact-info-container', { delay: 300 });
 
-// Function to add 'active' class to the navigation link corresponding to the current section
+///.Function to add 'active' class to the navigation link corresponding to the current section
 function highlightActiveNavLink() {
     var navLinks = document.querySelectorAll('.navbar ul li a');
 
-    document.querySelectorAll('section').forEach(function(section) {
+    document.querySelectorAll('section').forEach((section)=>{
       var top = section.offsetTop - 50;
       var bottom = top + section.offsetHeight;
 
@@ -185,7 +186,6 @@ function highlightActiveNavLink() {
       }
     });
 }
-
 // Add event listener for scrolling
 window.addEventListener('scroll', highlightActiveNavLink);
 
@@ -193,8 +193,7 @@ window.addEventListener('scroll', highlightActiveNavLink);
 highlightActiveNavLink();
 
 
-// Function to send an email:-
-
+// Function to send an email smtp.js and  elastic.email:-
 function sendEmail(){
 let name = document.getElementById('contact-name').value;
 let email = document.getElementById('contact-email').value;
@@ -212,6 +211,4 @@ Email.send({
 }).then(
   message => alert(message)
 );
-
-
 }
