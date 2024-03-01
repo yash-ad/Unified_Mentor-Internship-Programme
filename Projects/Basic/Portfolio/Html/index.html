@@ -19,8 +19,11 @@
 </head>
 <body>
   <header class="nav">
+    <!-- Logo -->
     <a href="/" class="logo"><i class="fa-solid fa-code"></i> Yash Dandnaik</a>
+    <!-- 🍔menu -->
     <div id="menu" class="fas fa-bars"></div>
+    <!-- Navbar -->
     <nav class="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -34,10 +37,9 @@
 
 
 
-<!-- hero section starts -->
+<!-- Hero/Profile section starts -->
 <section class="home" id="home">
 <div id="particles-js"></div>
-
 <div class="content" id="section__text">
   <p class="section__text__p1">Hello there! <span class="wave">👋🏻</span>
   </p>
@@ -64,7 +66,7 @@
 
 
 
-<!-- about section starts -->
+<!-- About section starts -->
 <section class="about" id="about">
 <div id="about-me">
 <p class="section__text__p1">Get To Know More</p>
@@ -74,7 +76,6 @@
 <div class="content">
     <h3>I'm Yash</h3>
     <span class="tag"> Frontend Developer</span>
-
     <p>
       I recently completed my web development training at Codekul Software Training Institute in Pune. I also hold a Bachelor of Science in Animation and Multimedia from Frameboxx 2.0 Animation Institute.Additionally, I have practical experience in a professional setting, having worked as a Junior Matchmove/RotoAnim Artist at Trace VFX Solutions.
 
@@ -96,7 +97,7 @@
 </section>
 
 
-<!-- skills section starts -->
+<!-- Skills section starts -->
 <section class="skills" id="skills">
 <div class="skills-heading">
 <p class="section__text__p1">Explore My</p>
@@ -104,7 +105,6 @@
 </div>
 <div class="container">
       <div class="row" id="skillsContainer">
-
         <div class="bar">
           <div class="info">
             <img src="/Projects/Basic/Portfolio/assets/TailwindCSS.png"/>
@@ -157,7 +157,7 @@
 
 
 
-<!--  project section starts -->
+<!--Project section starts -->
 <section class="work" id="work">
 <div class="project-heading">
 <p class="section__text__p1">Browse My Recent</p>
@@ -227,35 +227,30 @@
         <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()" required>
         <span id="name-error"></span>
       </div>
-
       <div class="input-group">
         <label>Email Id</label>
         <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()" required>
         <span id="email-error"></span>
       </div>  
-      
       <div class="input-group">
         <label>Subject</label>
         <input type="email" placeholder="Enter Subject" id="contact-subject" onkeyup="validateSubject()" required>
         <span id="subject-error"></span>
       </div>
-
       <div class="input-group">
         <label>Your Message</label>
         <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()" required></textarea>
         <span id="message-error"></span>
       </div>
-
     <button type="submit" onclick="return validateForm()">Submit</button>
     <span id="submit-error"></span>
-   
   </form>
-          </div>
-          <div class="contact-info-container">
+  </div>
+  <div class="contact-info-container">
             <p> <i class="fas fa-phone"></i>   +91 702-063-4551</p>
             <p> <i class="fas fa-envelope"></i>   yashdandnaik078@gmail.com</p>
             <p> <i class="fas fa-map-marked-alt"></i>   Pune, India</p>
-          </div>
+  </div>
 </div>
   </section>
 
@@ -285,12 +280,14 @@
 
 
 
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
 
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- Javascript Links ==== -->
+
+<!-- smtp cdn -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
