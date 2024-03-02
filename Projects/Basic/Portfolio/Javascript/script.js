@@ -188,6 +188,7 @@ Email.send({
 );
 }
 
+
 // Function to highlight the active navigation link when the user scrolls
 function highlightActiveNavLink() {
     // Select all navigation links in the navbar
@@ -222,6 +223,8 @@ window.addEventListener('scroll', highlightActiveNavLink);
 
 // Call the function initially to highlight the active navigation link on page load
 highlightActiveNavLink();
+
+
 
 
 
