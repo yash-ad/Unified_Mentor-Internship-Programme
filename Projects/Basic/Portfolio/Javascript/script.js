@@ -120,7 +120,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 // Typed.js effect
 var typed = new Typed(".typing-text", {
-    strings: ["Frontend developer"],
+    strings: ["Frontend developer","Personal fitness coach"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50,
@@ -166,31 +166,6 @@ srtop.reveal('.work .box', { interval: 200 });
 srtop.reveal('#contact .contact-form', { delay: 400 });
 srtop.reveal('#contact .contact-info-container', { delay: 300 });
 
-///.Function to add 'active' class to the navigation link corresponding to the current section
-function highlightActiveNavLink() {
-    var navLinks = document.querySelectorAll('.navbar ul li a');
-
-    document.querySelectorAll('section').forEach((section)=>{
-      var top = section.offsetTop - 50;
-      var bottom = top + section.offsetHeight;
-
-      if (window.scrollY >= top && window.scrollY < bottom) {
-        navLinks.forEach(function(navLink) {
-          navLink.classList.remove('active');
-        });
-        
-        var correspondingNavLink = document.querySelector('.navbar ul li a[href="#' + section.id + '"]');
-        if (correspondingNavLink) {
-          correspondingNavLink.classList.add('active');
-        }
-      }
-    });
-}
-// Add event listener for scrolling
-window.addEventListener('scroll', highlightActiveNavLink);
-
-// Call the function initially to highlight the active navigation link on page load
-highlightActiveNavLink();
 
 
 // Function to send an email smtp.js and  elastic.email:-
@@ -212,3 +187,46 @@ Email.send({
   message => alert(message)
 );
 }
+
+// Function to highlight the active navigation link when the user scrolls
+function highlightActiveNavLink() {
+    // Select all navigation links in the navbar
+    let navLinks = document.querySelectorAll('.navbar ul li a');
+
+    // Loop through each section
+    document.querySelectorAll('section').forEach((section) => {
+        // Calculate the top and bottom positions of the section
+        let top = section.offsetTop - 50;
+        let bottom = top + section.offsetHeight;
+
+        // Check if the user's scroll position is within the section's boundaries
+        if (window.scrollY >= top && window.scrollY < bottom) {
+            // Remove 'active' class from all navigation links
+            navLinks.forEach((navLink) => {
+                navLink.classList.remove('active');
+            });
+
+            // Find the corresponding navigation link for the active section
+            let correspondingNavLink = document.querySelector('.navbar ul li a[href="#' + section.id + '"]');
+
+            // Add 'active' class to the corresponding navigation link
+            if (correspondingNavLink) {
+                correspondingNavLink.classList.add('active');
+            }
+        }
+    });
+}
+
+// Add event listener for scrolling to highlight active navigation link
+window.addEventListener('scroll', highlightActiveNavLink);
+
+// Call the function initially to highlight the active navigation link on page load
+highlightActiveNavLink();
+
+
+
+
+
+
+
+
