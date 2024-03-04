@@ -113,6 +113,7 @@ header .navbar ul li a:hover {
   color:  #00d9ff;
   display: none;
 }
+
 @media (max-width: 768px) {
   #menu {
     display: block;
@@ -303,7 +304,7 @@ font-weight: 600
 .socials {
   position: relative;
   margin-top: 15rem;
-  margin-left: 18rem;
+  margin-left: 19rem;
 }
 .socials .social-icons {
   padding-left: 0;

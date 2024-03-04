@@ -5,6 +5,8 @@ let subjectError = document.getElementById('subject-error');
 let messageError = document.getElementById('message-error');
 let submitError = document.getElementById('submit-error');
 
+
+///.Function for 'Form-validation':-
 // Function to validate name input
 function validateName() {
     let name = document.getElementById('contact-name').value;
@@ -22,7 +24,6 @@ function validateName() {
         return true;
     }
 }
-
 // Function to validate email input
 function validateEmail() {
     let email = document.getElementById('contact-email').value;
@@ -40,7 +41,6 @@ function validateEmail() {
         return true;
     }
 }
-
 // Function to validate subject input
 function validateSubject() {
     let subject = document.getElementById('contact-subject').value;
@@ -53,7 +53,6 @@ function validateSubject() {
         return true;
     }
 }
-
 // Function to validate message input
 function validateMessage() {
 
@@ -74,7 +73,6 @@ function validateMessage() {
     messageError.innerHTML = `<i class="fa-solid fa-circle-check"></i>`;
     return true;
 }
-
 // Function to validate the entire form
 function validateForm() {
     if (!validateName() || !validateEmail() || !validateSubject() || !validateMessage()) {
@@ -85,15 +83,13 @@ function validateForm() {
         }, 3000);
         return false;
     } else {
+        sendEmail();
         clearForm();
-        setTimeout(() => {
-            alert("Form submitted successfully");
-            document.getElementById('myForm').submit();
-        }, 0);
+        alert("Form submitted successfully");
+        document.getElementById('myForm').submit();
         return true;
     }
 }
-
 // Function to clear the form
 function clearForm() {
     document.getElementById('myForm').reset();
@@ -105,7 +101,8 @@ function clearForm() {
     });
 }
 
-// Toggle menu functionality using jQuery
+
+///.Toggle menu functionality using jQuery
 $(document).ready(function () {
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
@@ -113,21 +110,21 @@ $(document).ready(function () {
     });
 });
 
-// Tilt the profile picture image using VanillaTilt
+///.Tilt the profile picture image using VanillaTilt
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
 
-// Typed.js effect
+///.Typed.js effect
 var typed = new Typed(".typing-text", {
-    strings: ["Frontend developer","Personal fitness coach"],
+    strings: ["Frontend developer"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 50,
     backDelay: 500,
 });
 
-// Change document title based on visibility
+//.Change document title based on visibility
 document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === "visible") {
         document.title = "Portfolio | Yash Dandnaik";
@@ -168,7 +165,7 @@ srtop.reveal('#contact .contact-info-container', { delay: 300 });
 
 
 
-// Function to send an email smtp.js and  elastic.email:-
+///.Function to send an email smtp.js and  elastic.email:-
 function sendEmail(){
 let name = document.getElementById('contact-name').value;
 let email = document.getElementById('contact-email').value;
@@ -184,12 +181,20 @@ Email.send({
     Subject :subject,
     Body :finalmessage
 }).then(
-  message => alert(message)
+  message => 
+  {
+    if(message === `OK`){
+        alert("Email sent successfully");
+    }
+    else {
+        alert("Failed to send email. Please try again later.");
+    }
+  }
 );
 }
 
 
-// Function to highlight the active navigation link when the user scrolls
+///.Function to highlight the active navigation link when the user scrolls:-
 function highlightActiveNavLink() {
     // Select all navigation links in the navbar
     let navLinks = document.querySelectorAll('.navbar ul li a');
@@ -217,10 +222,8 @@ function highlightActiveNavLink() {
         }
     });
 }
-
 // Add event listener for scrolling to highlight active navigation link
 window.addEventListener('scroll', highlightActiveNavLink);
-
 // Call the function initially to highlight the active navigation link on page load
 highlightActiveNavLink();
 
