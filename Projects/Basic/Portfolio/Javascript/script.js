@@ -90,6 +90,36 @@ function validateForm() {
         return true;
     }
 }
+
+///.Function to send an email smtp.js and  elastic.email:-
+function sendEmail(){
+    let name = document.getElementById('contact-name').value;
+    let email = document.getElementById('contact-email').value;
+    let subject = document.getElementById('contact-subject').value;
+    let message = document.getElementById('contact-message').value;
+    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Subject : ${subject} <br>  Message : ${message} <br>`;
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "yashrajdandnaik@gmail.com",
+        Password : "91D7322AB6349247A97244EAFCBB92EA6CFF",
+        To : 'yashdandnaik078@gmail.com',
+        From : email,
+        Subject :subject,
+        Body :finalmessage
+    }).then(
+      message => 
+      {
+        if(message === `OK`){
+            alert("Email sent successfully");
+        }
+        else {
+            alert("Failed to send email. Please try again later.");
+        }
+      }
+    );
+    }
+    
+
 // Function to clear the form
 function clearForm() {
     document.getElementById('myForm').reset();
@@ -165,35 +195,6 @@ srtop.reveal('#contact .contact-info-container', { delay: 300 });
 
 
 
-///.Function to send an email smtp.js and  elastic.email:-
-function sendEmail(){
-let name = document.getElementById('contact-name').value;
-let email = document.getElementById('contact-email').value;
-let subject = document.getElementById('contact-subject').value;
-let message = document.getElementById('contact-message').value;
-let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Subject : ${subject} <br>  Message : ${message} <br>`;
-Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "yashrajdandnaik@gmail.com",
-    Password : "91D7322AB6349247A97244EAFCBB92EA6CFF",
-    To : 'yashdandnaik078@gmail.com',
-    From : email,
-    Subject :subject,
-    Body :finalmessage
-}).then(
-  message => 
-  {
-    if(message === `OK`){
-        alert("Email sent successfully");
-    }
-    else {
-        alert("Failed to send email. Please try again later.");
-    }
-  }
-);
-}
-
-
 ///.Function to highlight the active navigation link when the user scrolls:-
 function highlightActiveNavLink() {
     // Select all navigation links in the navbar
@@ -224,6 +225,7 @@ function highlightActiveNavLink() {
 }
 // Add event listener for scrolling to highlight active navigation link
 window.addEventListener('scroll', highlightActiveNavLink);
+
 // Call the function initially to highlight the active navigation link on page load
 highlightActiveNavLink();
 
